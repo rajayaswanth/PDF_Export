@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lowagie.text.DocumentException;
 import com.pdf.creator.entities.User;
 import com.pdf.creator.service.UserService;
-import com.pdf.creator.services.impl.UserPDFExporter;
+import com.pdf.creator.service.impl.UserPDFExporter;
 
 @RestController
 public class UserController {
