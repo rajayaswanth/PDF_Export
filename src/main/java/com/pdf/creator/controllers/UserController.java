@@ -25,9 +25,14 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@PostMapping("/user")
+	@PostMapping("/user/add")
 	User addUser(@RequestBody User user) {
 		return userService.addUser(user);
+	}
+
+	@GetMapping("/user/add/dummy")
+	List<User> addUsers() {
+		return userService.addDummyUsers();
 	}
 
 	@GetMapping("/users/export/pdf")
